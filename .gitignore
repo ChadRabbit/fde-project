@@ -1,0 +1,71 @@
+# ----------------------
+# Python
+# ----------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+
+# ----------------------
+# Environment Variables (IMPORTANT)
+# ----------------------
+.env
+.env.*
+
+# ----------------------
+# Streamlit
+# ----------------------
+.streamlit/secrets.toml
+
+# ----------------------
+# Database
+# ----------------------
+*.db
+*.sqlite3
+
+# ----------------------
+# Logs & temp files
+# ----------------------
+*.log
+tmp/
+temp/
+
+# ----------------------
+# IDE (IntelliJ / PyCharm)
+# ----------------------
+.idea/
+
+# ----------------------
+# OS files
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Gemini / API related safety
+# ----------------------
+config.py
+secrets.json
+credentials.json
+data_summary.py
+
+# ----------------------
+# Node (if you add frontend later)
+# ----------------------
+node_modules/
+dist/
+build/
+
+# ----------------------
+# Misc
+# ----------------------
+*.zip
+*.tar
+*.gz
+*.txt
+*.iml
+*.html
