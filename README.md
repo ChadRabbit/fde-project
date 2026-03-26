@@ -3,6 +3,25 @@
 An interactive, graph driven query system built on top of semi structured ERP style JSONL data. The project transforms raw business records into relational tables and a navigable graph, then lets users ask questions in natural language and receive grounded answers backed by SQL results.
 
 ## Working Link:- https://fde-project-assignment.streamlit.app/
+
+<p align="center">
+  <img width="738" height="439" alt="image" src="https://github.com/user-attachments/assets/9aae3385-05cc-4e80-8adb-63c57738e340" />
+  <br/>
+  <em>Complete graph showing relationships between ERP entities</em>
+</p>
+<p align="center">
+  <img width="801" height="653" alt="image" src="https://github.com/user-attachments/assets/5a70baa2-2561-4611-b84d-f878b0f2c299" />
+  <br/>
+  <em>LLM to transform natural language queries to DB Query and get accurat results</em>
+</p>
+<p align="center">
+  <img width="667" height="571" alt="image" src="https://github.com/user-attachments/assets/7c6d973b-7fbb-4960-be44-a5d3e4d7b1da" />
+  <br/>
+  <em>Zoomed in graph on one node</em>
+</p>
+
+
+## Note:- The implementation has been tested thoroughly by comparing raw data from jsonL files with the one returned on deployed link
 ## Overview
 
 Real ERP data is rarely stored in one clean table. Instead, business events are scattered across sales orders, deliveries, billing documents, accounting entries, products, customers, and address records. This project was built to handle exactly that kind of environment.
