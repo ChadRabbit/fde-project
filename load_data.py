@@ -2,7 +2,7 @@ import os
 import json
 import sqlite3
 
-BASE_PATH = "/Users/devanshmehra/IdeaProjects/fde-project/sap-o2c-data"  # your dataset root
+BASE_PATH = "sap-o2c-data"  # your dataset root
 conn = sqlite3.connect("data.db")
 dataFilesFormat = ".jsonl"
 
@@ -230,6 +230,17 @@ def insert_payments():
                  """)
     conn.executemany("INSERT INTO payments VALUES (?,?,?,?)", rows)
 
+def main():
+    insert_sales_orders()
+    insert_sales_order_items()
+    insert_deliveries()
+    insert_delivery_items()
+    insert_billing()
+    insert_items()
+    insert_payments()
+    insert_customers()
+    conn.commit()
+    conn.close()
 
 if __name__ == "__main__":
     insert_billing()

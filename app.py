@@ -1,9 +1,14 @@
 import streamlit as st
+import os
 from db import run_sql
 from llm import generate_sql, generate_answer
 from guardrails import is_valid_query
 from graph import save_graph, save_filtered_graph
 
+
+if not os.path.exists("data.db"):
+    import load_data
+    load_data.main()
 st.title("📊 Graph + AI Query System")
 
 # Graph
