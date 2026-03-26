@@ -357,48 +357,6 @@ The project uses the following main libraries:
 5. google generative ai
 6. python dotenv
 
-## Cleaning and repo hygiene
-
-The repository should stay clean and reproducible.
-
-### Do not commit
-
-1. `data.db`
-2. `.env`
-3. `__pycache__`
-4. temporary HTML graph files if they are regenerated locally
-5. large logs or debug artifacts
-
-### Recommended files to keep
-
-1. source code
-2. README
-3. requirements file
-4. `.env.example`
-5. a small sample dataset if needed for demonstration
-
-## Submission strategy
-
-For a strong submission, the repository should show three things clearly.
-
-1. The data was modeled thoughtfully.
-2. The graph is not decorative, it is part of the query experience.
-3. The answers are grounded in the dataset and not generated casually.
-
-If the reviewer opens the app, they should immediately see a meaningful graph, a query interface, and an answer that is backed by the data.
-
-## Future improvements
-
-There are several natural next steps if the project is extended further.
-
-1. Better entity extraction for graph highlighting.
-2. More advanced subgraph traversal.
-3. Smarter natural language intent classification.
-4. Streaming model responses.
-5. Graph clustering for anomaly detection.
-6. Cached query history.
-7. More precise query to node mapping.
-
 ## Final note
 
 This project is intentionally built to feel practical. It mirrors a real enterprise setting where data is messy, relationships matter, and answers need to be explainable. The goal was not to build something flashy. The goal was to build something that is useful, understandable, and credible.
